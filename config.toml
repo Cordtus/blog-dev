@@ -1,0 +1,40 @@
+baseURL = 'https://Cordtus.github.io/'
+languageCode = 'en-us'
+title = 'Blog Kludging v3.0'
+theme = "hugo-theme-cleanwhite"
+paginate = 5000 #frontpage pagination
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  header_image = "images/banner.png"
+  title = "Blogger Kludgineering"
+  slogan = "$ grep -rni \"The how's and why's\" ."
+  SEOTitle = "ADD SEO STUFF HERE"
+  keyword = "blog, create, github, learning, deploy, self hosted"
+ 
+  # Sidebar settings
+  sidebar_about_description = "kludger extreme"
+  sidebar_avatar = "images/downrocket.png"
+  about_me = true
+
+  featured_tags = true 
+  featured_condition_size = 2 # How many posts have to have a given tag to be featured (greater-than)
+
+  image_404 = "images/404.png"
+  title_404 = "We couldn't find what you were looking for..."
+
+  omit_categories = false
+
+  [[params.addtional_menus]]
+  title =  "ABOUT"
+  href =  "/top/about/"
+
+  [params.social]
+  rss            = true
+  email          = "cordtus@gmail.com"
+  github         = "https://github.com/Cordtus"
+  medium         = "https://medium.com/@MPWR"
